@@ -1,0 +1,9 @@
+.container-text{
+    color: blue;
+    text-align: left;
+}
+
+.grid-item{
+    padding: 1rem;
+    background-color: rgb(230, 180, 89);
+}
