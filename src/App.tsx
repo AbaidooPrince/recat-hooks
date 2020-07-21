@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react";
 import "./App.css";
 import AppBar from "@material-ui/core/AppBar";
@@ -6,6 +7,19 @@ import Confirm from "./Confirm";
 import Snackbar from "@material-ui/core/Snackbar";
 import GridLayout from "./mu-f-class";
 import Navbar from "./Appbar";
+import Todos from "./Todos";
+=======
+import React from 'react';
+import './App.css';
+import AppBar from '@material-ui/core/AppBar';
+import { Typography, Paper, Button } from '@material-ui/core';
+import Confirm from './Confirm'
+import Snackbar from '@material-ui/core/Snackbar'
+import GridLayout from './mu-f-class';
+import Navbar from './Appbar'
+import Todos from './Todos';
+
+>>>>>>> ba1ade28eff25c1c458b10c75ecdd0afe2a3cca9
 
 interface IState {
   confirmOpen: boolean;
@@ -90,44 +104,10 @@ class App extends React.Component<{}, IState> {
   render() {
     return (
       <div>
-        <div>
-          <Navbar />
-          <Paper className="App-header">
-            <p className="App-link">React + TypeScript</p>
 
-            <Button
-              className={this.state.triggerDialog ? "dialog-trigger" : ""}
-              variant="outlined"
-              color="inherit"
-              onClick={this.handleDialogBtn}
-            >
-              Show Dialog
-            </Button>
-          </Paper>
-        </div>
-        <Confirm
-          open={this.state.confirmOpen}
-          title="React + TypeScript"
-          content="Are you sure you want to learn React and TypeScript?"
-          okCaption="Yes Please!"
-          cancelCaption="No way"
-          onCancelClick={this.handleCancelClick}
-          onOkClick={this.handleOkClick}
-        />
-        <div className="content">
-          <Typography variant="h3">{this.state.response}</Typography>
-          {/* <Button className={!this.state.retriggerDialog ? "": "dialog-trigger"} variant="outlined" onClick={this.handleRetriggerDialog}>Restart</Button> */}
-          <GridLayout />
-        </div>
-        <Snackbar
-          open={this.state.snackShow}
-          message="Thanks for Choosing"
-          autoHideDuration={2000}
-          onClose={() => this.setState({ snackShow: false })}
-        />
       </div>
-    );
-  }
+    )
 }
 
-export default App;
+
+export deafult App;
