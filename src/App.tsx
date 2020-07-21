@@ -6,6 +6,7 @@ import Confirm from './Confirm'
 import Snackbar from '@material-ui/core/Snackbar'
 import GridLayout from './mu-f-class';
 import Navbar from './Appbar'
+import Todos from './Todos';
 
 
 interface IState {
@@ -118,6 +119,8 @@ class App extends React.Component<{}, IState>{
         </Typography>
         {/* <Button className={!this.state.retriggerDialog ? "": "dialog-trigger"} variant="outlined" onClick={this.handleRetriggerDialog}>Restart</Button> */}
         <GridLayout />
+
+        <Todos />
       </div>
       <Snackbar open={this.state.snackShow} 
                 message="Thanks for Choosing"

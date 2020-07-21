@@ -21,7 +21,7 @@ class Navbar extends React.Component{
                     </Typography>
                     </Toolbar>
                 </AppBar>
-
+            
 
             </div>
 
